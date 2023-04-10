@@ -13,6 +13,8 @@ export class InstantChatService {
   constructor() { }
 
   private socket = io('http://localhost:8081');
+  //Uncomment this to use deployed server(example):
+  //private socket = io('https://simpleexpresschatserver-production.up.railway.app/');
 
   joinRoom(data:any)
   {
